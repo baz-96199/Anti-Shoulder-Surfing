@@ -72,3 +72,28 @@ CHAT_ID = "YOUR_CHAT_ID"
 
 **Change MySQL password**
 password="your_password"
+
+**Working**
+Webcam detects faces
+↓
+Checks owner vs unknown
+↓
+Analyzes gaze direction
+↓
+Calculates risk score
+↓
+If risk high:
+- Save screenshot
+- Send Telegram alert
+- Store in MySQL
+- Lock Windows
+- Haar Cascade File
+
+**This project uses:**
+
+haarcascade_frontalface_default.xml
+
+Included in repository.
+If missing, OpenCV built-in version can also be used automatically.
+you need to find this in your pc at this location
+C:\Users\YourName\AppData\Local\Programs\Python\Python310\Lib\site-packages\cv2\data\
