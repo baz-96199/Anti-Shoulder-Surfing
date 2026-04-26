@@ -39,8 +39,8 @@ if len(owner_encodings) == 0:
     sys.exit()
 
 # ---------------- TELEGRAM ----------------
-BOT_TOKEN = "8769002086:AAEbvObYm_Gpx9UWejTPd1sCMHJ4IKXIhC8"
-CHAT_ID = "6071561703"
+BOT_TOKEN = "YOUR_BOT_TOKEN" 
+CHAT_ID = "YOUR_CHAT_ID"
 
 def send_telegram_message(text):
     try:
@@ -62,7 +62,7 @@ def get_db_connection():
     return mysql.connector.connect(
         host="localhost",
         user="root",
-        password="root@123"
+        password="your_password"
     )
 
 # ---------------- MEDIAPIPE ----------------
